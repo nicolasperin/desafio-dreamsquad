@@ -9,5 +9,5 @@ class ChatRequest(BaseModel):
 
 @app.post("/chat")
 async def chat (request: ChatRequest):
-    response = await agent.run(request.message)
+    response = agent(request.message)
     return {"response": response}

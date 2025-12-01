@@ -1,4 +1,4 @@
-from strands import tool
+from strands.tools.decorator import tool
 
 @tool(name="calculator", description="Resolve expressões matemáticas")
 def calculate_expression(expression: str):
